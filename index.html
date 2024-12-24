@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Expense Tracker</h1>
+  </header>
+  <main>
+    <section id="expense-form">
+      <h2>Add Expense</h2>
+      <form id="form">
+        <input type="date" id="date" required />
+        <input type="text" id="category" placeholder="Category" required />
+        <input type="number" id="amount" placeholder="Amount" required />
+        <textarea id="description" placeholder="Description"></textarea>
+        <button type="submit">Add</button>
+      </form>
+    </section>
+    <section id="expense-list">
+      <h2>Expenses</h2>
+      <ul id="list"></ul>
+    </section>
+    <section id="charts">
+      <canvas id="chart"></canvas>
+    </section>
+  </main>
+  <footer>
+    <p>Expense Tracker © 2024</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
